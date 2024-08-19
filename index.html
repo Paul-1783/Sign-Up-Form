@@ -23,7 +23,7 @@
             </div>
             <div class="form">
                 <p>Let's do this!</p>
-                <form action="https://httpbin.org/" method="GET">
+                <form action="https://httpbin.org/" method="GET" novalidate>
                     <div class="formArea_submittable">
                         <div>
                             <label for="first_name">FIRST NAME</label>
@@ -32,6 +32,7 @@
                             <input type="email" id="email" name="email">
                             <label for="password">PASSWORD</label>
                             <input type="password" id="password" name="password">
+                            <span class="error" aria-live="polite"></span>
                         </div>
                         <div>
                             <label for="last_name">LAST NAME</label>
@@ -40,6 +41,7 @@
                             <input type="tel" id="tel" name="tel">
                             <label for="pw_confirm">CONFIRM PASSWORD</label>
                             <input type="password" id="pw_confirm" name="pw_confirm">
+                            <span class="errorConfirm" aria-live="polite"></span>
                         </div>
                     </div>
                     <div class="login">
